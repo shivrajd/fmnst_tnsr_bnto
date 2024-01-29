@@ -1,0 +1,13 @@
+service: "service:svc"
+labels:
+  owner: sd
+  stage: testing
+include:
+  - "*.py"
+exclude:
+  - "*.ipynb"
+python:
+  lock_packages: false
+  packages:
+    - tensorflow
+    - Pillow
